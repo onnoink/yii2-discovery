@@ -7,7 +7,7 @@
             "AlphaCar\\Discovery\\": "src/"
         }
     },
-    "licence": "MIT",
+    "license": "MIT",
     "minimum-stability": "stable",
     "authors": [
         {

@@ -1,6 +1,6 @@
 <?php
 
-namespace AlphaCar\Discovery\Registrar;
+namespace discovery\registrar;
 
 interface Discovery
 {

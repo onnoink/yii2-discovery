@@ -1,10 +1,10 @@
 <?php
 
 
-namespace AlphaCar\Discovery;
+namespace discovery;
 
 
-use AlphaCar\Discovery\Registrar\Discovery;
+use discovery\registrar\Discovery;
 use yii\base\Component;
 
 class DiscoveryManager extends Component

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Alphacar\GrpcCaller;
+namespace discovery;
 
 
 class ServiceInstance

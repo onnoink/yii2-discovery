@@ -1,7 +1,7 @@
 <?php
 
 
-namespace AlphaCar\Discovery\Registrar;
+namespace discovery\registrar;
 
 
 use yii\base\Exception;

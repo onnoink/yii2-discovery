@@ -1,10 +1,10 @@
 <?php
 
 
-namespace AlphaCar\Discovery\Registrar;
+namespace discovery\registrar;
 
 
-use Alphacar\GrpcCaller\ServiceInstance;
+use discovery\ServiceInstance;
 use SensioLabs\Consul\ServiceFactory;
 use SensioLabs\Consul\Services\Health;
 use SensioLabs\Consul\Services\HealthInterface;

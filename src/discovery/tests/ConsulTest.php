@@ -1,11 +1,11 @@
 <?php
 
 
-namespace AlphaCar\Discovery\Tests;
+namespace discovery\tests;
 
-use AlphaCar\Discovery\Registrar\Consul;
-use AlphaCar\Discovery\Registrar\ServerConnectionException;
-use AlphaCar\Discovery\Registrar\ServiceNotFoundException;
+use discovery\registrar\Consul;
+use discovery\registrar\ServerConnectionException;
+use discovery\registrar\ServiceNotFoundException;
 
 class ConsulTest extends \PHPUnit_Framework_TestCase
 {

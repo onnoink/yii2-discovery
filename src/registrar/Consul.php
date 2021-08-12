@@ -9,23 +9,28 @@ use SensioLabs\Consul\ServiceFactory;
 use SensioLabs\Consul\Services\Health;
 use SensioLabs\Consul\Services\HealthInterface;
 use Symfony\Component\HttpClient\Exception\TransportException;
+use yii\base\Component;
 
-class Consul implements Discovery
+class Consul extends Component implements Discovery
 {
+    public $address;
+
     /**
      * @var $client Health
      */
-    public $client;
+    private $client;
 
-    public function __construct($address)
+
+    public function init()
     {
-        $factory = new ServiceFactory(['base_uri' => $address]);
+        parent::init();
+        $factory = new ServiceFactory(['base_uri' => $this->address]);
         /**
          * @var $service Health
          */
         $this->client = $factory->get(HealthInterface::class);
     }
-
+    
     function getService($serviceName, $tags = [])
     {
         $query = [
